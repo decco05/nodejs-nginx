@@ -8,6 +8,7 @@ RUN npm run build
 
 FROM node:10.15.2-alpine
 WORKDIR /usr/src/app
+RUN  apk --no-cache add curl
 COPY package.json ./
 COPY .babelrc ./
 RUN npm install
