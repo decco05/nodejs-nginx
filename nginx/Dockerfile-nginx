@@ -1,8 +1,0 @@
-FROM nginx:1.17.8
-
-RUN apt update 
-RUN apt upgrade -y
-RUN apt install -y curl
-
-
-
